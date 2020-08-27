@@ -1,3 +1,21 @@
 # Project exclude paths
 /.gradle/
 /build/
+/.idea
+/.idea/$CACHE_FILE$
+/.idea/.gitignore
+/logs/2020-08-27.log
+/.idea/codeStyles/codeStyleConfig.xml
+/.idea/compiler.xml
+/.idea/gradle.xml
+/gradle/wrapper/gradle-wrapper.jar
+/gradle/wrapper/gradle-wrapper.properties
+/.idea/jarRepositories.xml
+/.idea/kotlinc.xml
+/plugins/MiraiSongOrderPlugin-0.1.0-all.jar
+/.idea/misc.xml
+/config/ConsoleBuiltIns/net.mamoe.mirai.console.internal.util.ManagersConfig
+/.idea/codeStyles/Project.xml
+/src/test/kotlin/runConsole.kt
+/.idea/vcs.xml
+/device.json
