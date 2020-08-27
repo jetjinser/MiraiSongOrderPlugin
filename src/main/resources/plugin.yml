@@ -1,0 +1,3 @@
+name: "SongOrderPlugin"
+main: "com.github.songOrderPlugin.SongOrderMain"
+version: "0.1.0"

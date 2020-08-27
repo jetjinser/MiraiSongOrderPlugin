@@ -1,0 +1,43 @@
+buildscript {
+    ext.kotlin_version = '1.4'
+}
+
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.4.0'
+    id 'org.jetbrains.kotlin.plugin.serialization' version "1.4.0"
+
+    id 'com.github.johnrengelman.shadow' version '6.0.0'
+}
+
+apply plugin: 'com.github.johnrengelman.shadow'
+
+group 'com.github.jinserr'
+version '0.1.0'
+
+repositories {
+    mavenCentral()
+    jcenter()
+}
+
+kotlin.target.compilations.all {
+    kotlinOptions.freeCompilerArgs += "-Xjvm-default=enable"
+    kotlinOptions.jvmTarget = "1.8"
+}
+
+kotlin.sourceSets.all {
+    languageSettings.useExperimentalAnnotation("kotlin.RequiresOptIn")
+}
+
+shadowJar {}
+
+
+dependencies {
+    implementation "org.jetbrains.kotlin:kotlin-stdlib"
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+
+    implementation("net.mamoe:mirai-core:1.2.2")
+    implementation("net.mamoe:mirai-console:1.0-M3")
+    implementation("io.ktor:ktor-client-serialization-jvm:1.4.0")
+
+    testImplementation("net.mamoe:mirai-console-pure:1.0-M3")
+}
