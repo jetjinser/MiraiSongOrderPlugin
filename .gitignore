@@ -16,6 +16,7 @@
 /.idea/misc.xml
 /config/ConsoleBuiltIns/net.mamoe.mirai.console.internal.util.ManagersConfig
 /.idea/codeStyles/Project.xml
-/src/test/kotlin/runConsole.kt
+/src/test/kotlin/
 /.idea/vcs.xml
 /device.json
+/logs/
