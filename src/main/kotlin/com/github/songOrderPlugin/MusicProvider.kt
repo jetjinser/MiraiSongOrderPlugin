@@ -65,11 +65,11 @@ object MusicProvider {
                     "",
                     "0",
                     "",
-                    "网易云音乐",
+                    "网易云音乐 via SongOrder",
                     musicName
                 )
             ),
-            "[分享]$musicName",
+            "[分享]$musicName via SongOrder",
             "0.0.0.1",
             "music"
         )
